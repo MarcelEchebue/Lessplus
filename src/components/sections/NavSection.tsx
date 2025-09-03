@@ -43,51 +43,38 @@ export function NavSection({ onNavigate }: NavSectionProps) {
     <section id="nav" className="bg-surface-white py-20">
       <div className="container mx-auto px-6">
         {/* Navigation Links */}
-        <div className="flex flex-row items-center justify-center 
-             space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-8 
-             mb-16 border-b border-border pb-8 
-             px-3 sm:px-4 md:px-6"
->
-  <button
-    onClick={() => onNavigate('projects')}
-    className="text-xs sm:text-sm md:text-base lg:text-lg 
-               font-medium text-brand-primary 
-               hover:text-brand-accent transition-fast tracking-wide"
-  >
-    {t('nav.projects')}
-  </button>
-  <button
-    onClick={() => onNavigate('store')}
-    className="text-xs sm:text-sm md:text-base lg:text-lg 
-               font-medium text-brand-primary 
-               hover:text-brand-accent transition-fast tracking-wide"
-  >
-    {t('store.title')}
-  </button>
-  <button
-    onClick={() => onNavigate('research')}
-    className="text-xs sm:text-sm md:text-base lg:text-lg 
-               font-medium text-brand-primary 
-               hover:text-brand-accent transition-fast tracking-wide"
-  >
-    {t('nav.research')}
-  </button>
-  <button
-    onClick={() => onNavigate('about')}
-    className="text-xs sm:text-sm md:text-base lg:text-lg 
-               font-medium text-brand-primary 
-               hover:text-brand-accent transition-fast tracking-wide"
-  >
-    {t('nav.about')}
-  </button>
-  <button
-    onClick={() => onNavigate('contact')}
-    className="text-xs sm:text-sm md:text-base lg:text-lg 
-               font-medium text-brand-primary 
-               hover:text-brand-accent transition-fast tracking-wide"
-  >
-    {t('nav.contact')}
-  </button>
+        <div className="flex flex-row items-center justify-center space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-8 mb-16 border-b border-border pb-8 px-3 sm:px-4 md:px-6">
+
+          <button
+            onClick={() => onNavigate('projects')}
+            className="text-xs sm:text-sm md:text-base lg:text-lg font-medium text-brand-primary hover:text-brand-accent transition-fast tracking-wide"
+          >
+            {t('nav.projects')}
+          </button>
+          <button
+            onClick={() => onNavigate('store')}
+            className="text-xs sm:text-sm md:text-base lg:text-lg font-medium text-brand-primary hover:text-brand-accent transition-fast tracking-wide"
+          >
+            {t('store.title')}
+          </button>
+          <button
+            onClick={() => onNavigate('research')}
+            className="text-xs sm:text-sm md:text-base lg:text-lg font-medium text-brand-primary hover:text-brand-accent transition-fast tracking-wide"
+          >
+            {t('nav.research')}
+          </button>
+          <button
+            onClick={() => onNavigate('about')}
+            className="text-xs sm:text-sm md:text-base lg:text-lg font-medium text-brand-primary hover:text-brand-accent transition-fast tracking-wide"
+          >
+            {t('nav.about')}
+          </button>
+          <button
+            onClick={() => onNavigate('contact')}
+            className="text-xs sm:text-sm md:text-base lg:text-lg font-medium text-brand-primary hover:text-brand-accent transition-fast tracking-wide"
+          >
+            {t('nav.contact')}
+          </button>
         </div>
 
         {/* Main Description */}
